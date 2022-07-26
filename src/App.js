@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-multi-carousel/lib/styles.css';
 import './App.css';
 import { Routes , Route} from 'react-router-dom';
 import Hompage from './page/Hompage';
