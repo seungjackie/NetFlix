@@ -7,7 +7,8 @@ const Banner = ({movie}) => {
     <div className='banner' style={{
       backgroundImage:
         "url(" + 
-        `https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.poster_path}` +  /* ${}사용하기 위해서 */
+        // `https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${movie.poster_path}` +  /* ${}사용하기 위해서 */
+        `https://my-json-server.typicode.com/seungjackie/NetFlix/t/p/w1920_and_h800_multi_faces${movie.poster_path}` +  /* ${}사용하기 위해서 */
         ")",
     }}
     >

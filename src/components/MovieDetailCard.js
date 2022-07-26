@@ -13,7 +13,7 @@ const MovieDetailCard = ({movie}) => {
         style={{
             backgroundImage:
                 "url(" + 
-                `https://image.tmdb.org/t/p/w300_and_h450_bestv2${movie.data.poster_path}` + 
+                `https://my-json-server.typicode.com/seungjackie/NetFlix/w300_and_h450_bestv2${movie.data.poster_path}` + 
                 ")"
         }} />
         :null
