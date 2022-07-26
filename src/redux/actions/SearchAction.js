@@ -4,7 +4,7 @@ const api_key =process.env.REACT_APP_API_KEY
 // console.log(api_key)
 
 function getSearchMovies(state) {
-    console.log("key event is ~~~~~~~~ 2번째 ~~~" , state)
+    // console.log("key event is ~~~~~~~~ 2번째 ~~~" , state)
     return async(dispatch) => {
         try {
 
