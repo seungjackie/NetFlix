@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  // baseURL: "https://api.themoviedb.org/3",
-  baseURL: "https://my-json-server.typicode.com/seungjackie/NetFlix",
+  baseURL: "https://api.themoviedb.org/3",
+  // baseURL: "https://my-json-server.typicode.com/seungjackie/NetFlix",
   headers: { "Content-Type": "application/json" },
 });
 
