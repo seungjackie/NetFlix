@@ -52,3 +52,39 @@ body{
 .card:hover .overlay{
   opacity: 1;
 }
+
+
+.cardPoster {
+  width: 500px;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* img{
+  width: 100%;
+  height: 100%;
+} */
+
+.movie-card-layout-left {
+  width: 50%;
+}
+
+.movie-card-layout-right {
+  width: 50%;
+  text-align: center;
+}
+
+.MovieDetailCard_Button{
+  margin: 10px;
+}
+
+.movie-card-title{
+  font-size: 70px;
+  font-weight: 500;
+  color: white;
+}
+
+.movie-card-overview{
+  font-size: 30px;
+}

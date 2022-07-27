@@ -24,7 +24,6 @@ const MovieCard = ({item}) => {
                 backgroundImage:
                     "url(" + 
                     `https://www.themoviedb.org/t/p/w355_and_h200_multi_faces${item.poster_path}` + 
-                    // `https://my-json-server.typicode.com/seungjackie/NetFlix/w355_and_h200_multi_faces${item.poster_path}` + 
                     ")"
             }}>
             <div className="overlay" onClick={clickToDetail}>

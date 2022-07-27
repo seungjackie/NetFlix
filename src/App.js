@@ -3,7 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import './App.css';
 import { Routes , Route} from 'react-router-dom';
 import Hompage from './page/Hompage';
-import Movie from './page/Movie'
+import Movie from './page/Movies'
 import MovieDtail from './page/MovieDetail';
 import Naviation from './components/Naviation';
 import MovieSearch from './page/MovieSearch';

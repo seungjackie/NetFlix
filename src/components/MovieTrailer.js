@@ -22,7 +22,7 @@ const MovieTrailer = ({trailer}) => {
 
     return (
       <>
-        <Button onClick={() => setLgShow(true)}>Large modal</Button>
+        <Button onClick={() => setLgShow(true)}>Movie Trailer</Button>
   
         <Modal
           size="lg"
@@ -32,7 +32,7 @@ const MovieTrailer = ({trailer}) => {
         >
           <Modal.Header closeButton>
             <Modal.Title id="example-modal-sizes-title-lg">
-              Large Modal
+              Movie Trailer
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>

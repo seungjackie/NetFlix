@@ -50,10 +50,6 @@ const MovieDetail = () => {
           <h1>Movie detailCard</h1>
           <MovieDetailCard movie= {movieDetailList} />
 
-          <div>
-            <MovieTrailer  trailer={movieTrailerList}/>
-          </div>
-
 
           {/* 어떤 값은 fale을 주고 어떤 값은 true를 줘서 버튼이 하나씩 동작 하게 하기 */}
           <h1>Movie Review</h1>
