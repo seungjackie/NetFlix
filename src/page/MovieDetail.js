@@ -8,6 +8,8 @@ import MovieReview from '../components/MovieReview';
 import MovieDetailCard from '../components/MovieDetailCard';
 import Recommandations from '../components/Recommandations';
 import MovieTrailer from '../components/MovieTrailer';
+import Button from 'react-bootstrap/Button';
+
 
 const MovieDetail = () => {
   
@@ -47,20 +49,27 @@ const MovieDetail = () => {
   return (
     <div>
         <div>
-          <h1>Movie detailCard</h1>
           <MovieDetailCard movie= {movieDetailList} />
 
 
           {/* 어떤 값은 fale을 주고 어떤 값은 true를 줘서 버튼이 하나씩 동작 하게 하기 */}
-          <h1>Movie Review</h1>
-          <button onClick={() => changButton(false)}> click to Movie Review </button>
+          {/* <h1>Movie Review</h1> */}
+           <div> 
+          <Button onClick={() => changButton(false)} variant="danger" className='MovieDetail_Reivew' >
+            Movie Review  
+          </Button>
+          <Button onClick={() => changButton(true)} variant="danger" className='MovieDetail_Related' >
+            RELATED MOVES
+          </Button>
+          </div>
+          {/* <button onClick={() => changButton(false)}> click to Movie Review </button>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={() => changButton(true)}> RELATED MOVES </button>
+          <button onClick={() => changButton(true)}> RELATED MOVES </button> */}
 
           <div>
           {
             click ?<Recommandations relatedmovie={movieRelatedList}/> 
-            :<MovieReview review ={reviewList}/>
+            :<MovieReview reviewList ={reviewList}/>
           }
           </div>
 

@@ -29,7 +29,7 @@ const Hompage = () => {
     }
 
   return (
-    <div>
+    <div className='slide'>
       <Banner movie={popularMovies.results[0]}/>
 
       <h1>popular movie</h1>
