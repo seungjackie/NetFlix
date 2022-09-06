@@ -2,6 +2,9 @@ import React from 'react'
 import { Badge } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 // 1. genrelist 어떻게 쓸지?
 
@@ -18,6 +21,10 @@ const MovieCard = ({item}) => {
         // 변수, item의 아이디 값
         navigate(`movie/${item.id}`)
     }
+
+    console.log("asdfdasf " , item)
+    console.log("ger" , item.genre_ids)
+
     return (
         <div className='card'
             style={{
@@ -34,8 +41,8 @@ const MovieCard = ({item}) => {
                     <Badge bg="danger" key={index}>{genreList.find(item => item.id == id ).name}</Badge>
                 ))}
                 <div>
-                    <span>{item.vote_average}</span>
-                    <span>{item.adult ? "청불" : "Under 18"}</span>
+                    <span> <FontAwesomeIcon icon={faStar}/>{item.vote_average} /</span>
+                    <span style={{color : 'red', fontWeight : "bold", fontStyle: 'italic'}}>{item.adult ? "청불" : "Under 18"}</span>
                 </div>
             </div>
         </div>

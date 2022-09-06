@@ -22,7 +22,7 @@ const Movie = () => {
   return (
     <div className="Movie_page_layout">
       <div className="Movie_secion1" >
-        <Sort />
+        {/* <Sort /> */}
       </div>
       <div className="Movie_secion2">
         <Pagenations popularMovies={popularMovies}/>

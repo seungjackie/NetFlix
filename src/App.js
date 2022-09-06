@@ -7,6 +7,7 @@ import Movie from './page/Movies'
 import MovieDtail from './page/MovieDetail';
 import Naviation from './components/Naviation';
 import MovieSearch from './page/MovieSearch';
+import Movies from './page/Movies'
 
 
 // 1. 3개페이지 필요 홈페이지, movie 페이지, movie detail
@@ -35,6 +36,7 @@ function App() {
           <Route path="/movie" element={<Movie/>} /> 
           <Route path="/movie/:id" element={<MovieDtail />} />
           <Route path="/movie/search" element={<MovieSearch />} />
+          <Route path="/movies" element={<Movies />} /> 
         </Routes>
     </div>
   );

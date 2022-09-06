@@ -68,7 +68,7 @@ const Naviation = () => {
             navbarScroll
           >
             <Link to='/' className="navbar-item">Home</Link>
-            <Link to='movie' className="navbar-item">Movies</Link>
+            <Link to='movies' className="navbar-item">Movies</Link>
           </Nav>
           {/* <Form className="d-flex" onSubmit={(event) =>handleSubmit(event)}> */}
           <Form className="d-flex" onSubmit={(e) => handleSubmit(e)}>
