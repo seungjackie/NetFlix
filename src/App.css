@@ -38,11 +38,13 @@ body{
 
 
 .card {
-  width: 330px;
+  width: 90%;
   height: 300px ;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
 }
 
 .overlay{
