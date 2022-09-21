@@ -32,6 +32,7 @@ api.interceptors.response.use(
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
     // console.log("get response error", error);
+    
     return Promise.reject(error);
   }
 );
